@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type"text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Order</title>
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <h1>Order a Pie</h1>
+    </div>
+
+    <h2>Let's Order a Pizza Pie!</h2>
+      <h3>How to:</h3>
+        <p>Choose your options, order and see your cost:</p>
+        <ol>
+          <li>Toppings</li>
+          <li>Size</li>
+          <li>A first name for your order</li>
+        </ol>
+
+  <form>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Which size?</h2>
+          <div class="radio">
+          <label>
+          <input type="radio" name="size" value="Large" checked>
+            Large
+          </label>
+          </div>
+          <div class="radio">
+          <label>
+          <input type="radio" name="size" value="Medium" checked>
+            Medium
+          </label>
+          </div>
+          <div class="radio">
+          <label>
+          <input type="radio" name="size" value="Personal" checked>
+            Personal
+          </label>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <h2>Toppings:</h2>
+            <input type="checkbox" name="topping-choice" value="cheese"> Cheese<br>
+            <input type="checkbox" name="topping-choice" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="topping-choice" value="olives"> Olives<br>
+            <input type="checkbox" name="topping-choice" value="mushrooms"> Mushrooms<br>
+          </div>
+        </div>
+      </div>
+
+           <button type="submit">Order my pie!</button>
+        </form>
+
+
+      </div>
+
+  </body>
+</html>
