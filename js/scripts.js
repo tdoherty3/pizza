@@ -2,6 +2,7 @@
 function Pizza (size, topping, name) {
   console.log(size);
   console.log(topping);
+  //debugger;
   this.name = name;
   this.size = size;
   this.topping = topping;
@@ -16,7 +17,6 @@ Pizza.prototype.setPizzaPrice = function(){
 $(document).ready(function() {
 
   $("#submit").click(function(event){
-    alert("submit");
     event.preventDefault();
     var selectedSize = parseInt($("select#pizza-size").val());
     var selectedTopping = parseInt($("select#pizza-type").val());
@@ -29,6 +29,6 @@ $(document).ready(function() {
 
     console.log(pizza);
 
-    $("#your-order").append("<li>" + pizza.name + " Your order will cost $" + pizza.setPizzaPrice() + "</li>");
+    $("#your-order").append("<li> Thanks " + pizza.name + ", your order will cost $" + pizza.setPizzaPrice() + ".00. </li>");
   });
 });
