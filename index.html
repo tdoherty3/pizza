@@ -1,78 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type"text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Pizza Order</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type"text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza Order</title>
+</head>
 
-  <body>
+<body>
 
-    <div class="jumbotron">
-      <h1>Order a Pie</h1>
-    </div>
+  <div class="jumbotron">
+    <h1>Order a Pie</h1>
+  </div>
 
-    <h2>Let's Order a Pizza Pie!</h2>
-      <h3>How to:</h3>
-        <p>Choose your options, order and see your cost:</p>
-        <ol>
-          <li>Toppings</li>
-          <li>Size</li>
-          <li>A first name for your order</li>
-        </ol>
+  <h2>Let's Order a Pizza Pie!</h2>
+  <h3>How to:</h3>
+  <p>Choose your options, order and see your cost:</p>
+  <ol>
+    <li>Toppings</li>
+    <li>Size</li>
+    <li>A first name for your order</li>
+  </ol>
 
-  <form>
+  <form class="order-form">
     <div class="row">
       <div class="col-md-6">
         <h2>Which size?</h2>
-          <div class="radio">
-          <label>
-          <input type="radio" name="size" value="Large" checked>
-            Large
-          </label>
-          </div>
-          <div class="radio">
-          <label>
-          <input type="radio" name="size" value="Medium" checked>
-            Medium
-          </label>
-          </div>
-          <div class="radio">
-          <label>
-          <input type="radio" name="size" value="Personal" checked>
-            Personal
-          </label>
-          </div>
-        </div>
 
-        <div class="col-md-6">
-          <div class="form-group">
-            <h2>Toppings:</h2>
-            <input type="checkbox" name="topping-choice" value="cheese"> Cheese<br>
-            <input type="checkbox" name="topping-choice" value="pepperoni"> Pepperoni<br>
-            <input type="checkbox" name="topping-choice" value="olives"> Olives<br>
-            <input type="checkbox" name="topping-choice" value="mushrooms"> Mushrooms<br>
+        <select class="form-control" id="pizza-size">
+          <div class="radio">
+            <option type="radio" name="large" value="12">Large</option>
           </div>
-        </div>
+          <div class="radio">
+            <option type="radio" name="medium" value="10">Medium</option>
+          </div>
+          <div class="radio">
+            <option type="radio" name="personal" value="8">Personal</option>
+          </div>
+        </select>
       </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="form-group">
+
+        <div class="col-md-6">
+          <h2>Which size?</h2>
+          <select class="form-control" id="pizza-type">
+            <div class="radio">
+              <option type="radio" name="large" value="2">Cheese</option>
+            </div>
+            <div class="radio">
+              <option type="radio" name="medium" value="4">Pepperoni Madness</option>
+            </div>
+            <div class="radio">
+              <option type="radio" name="personal" value="6">Olives</option>
+            </div>
+            <div class="radio">
+              <option type="radio" name="personal" value="8">Spring Veggie</option>
+            </div>
+          </select>
+        </div>
+
+        <!-- <div class="col-md-6">
+        <div class="form-group">
+          <h2>Toppings:</h2>
+          <input type="checkbox" name="topping" value="1"> Cheese<br>
+          <input type="checkbox" name="topping" value="2"> Pepperoni<br>
+          <input type="checkbox" name="topping" value="3"> Olives<br>
+          <input type="checkbox" name="topping" value="4"> Mushrooms<br>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
           <label for="firstname"><h2>A first name for the order?</h2></label>
           <input id="firstname" class="form-control" type="text">
         </div>
-        </div>
       </div>
+    </div>
 
-        <button type="submit">Order my pie!</button>
-      </form>
+    <button id="submit" type="button">Order my pie!</button>
+  </form>
 
+<div>
+  <ul id="your-order">
+  </ul>
+  
+</div>
 
-      </div>
+</div>
 
-  </body>
+</body>
 </html>
