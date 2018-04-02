@@ -1,0 +1,57 @@
+# _Pizza_
+
+#### _This a project is an HTML page code review exercise for the evening Intro class at Epicodus, March, 2018_
+
+#### By _**Thomas Doherty**_
+
+## Description
+
+_This is an HTML page styled with CSS and Bootstrap, using jQuery functions, constructor and prototype functions. The task was to create a website for a pizza company where a user can choose one or more individual toppings and a size to order a pizza and see the final cost.
+
+## Specifications
+
+* _Three options for pizza size using a radio buttons._
+* _Four options for ingredients using a radio buttons._
+* _Gather first name using a form group._
+* _Create a pizza object constructor with properties for toppings and size._
+* _Create a prototype method for the cost of a pizza depending on the selections chosen._
+* _Give results to user by returning a string._
+* -Reset page option._
+
+## GitHub Link
+
+_https://github.com/tdoherty3/pizza.git_
+
+## gh-pages link
+
+_        _
+
+## Setup/Installation Requirements
+
+* _Access and open / create an account at the GitHub site._
+* _Clone the project repository (see GitHub link above) to a directory on your local computer._
+* _Use a command line interface (such as terminal on Mac) and a source code editor such as Atom to access and view files._
+* _Or, you may also access gh-pages to view the page
+
+## Known Bugs
+
+_Reset button will not operate._
+_Check box approach was abandoned in favor of radio buttons._
+
+## Support and contact details
+
+_Please contact Thomas Doherty with questions: thomas@selfsustain.com_
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _jQuery_
+* _Git Hub_
+
+### License
+
+*MIT License*
+
+Copyright (c) 2018 **_Thomas Doherty_**

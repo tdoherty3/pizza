@@ -14,6 +14,7 @@ Pizza.prototype.setPizzaPrice = function(){
 }
 
 //User Interface
+
 $(document).ready(function() {
 
   $("#submit").click(function(event){
@@ -29,6 +30,15 @@ $(document).ready(function() {
 
     console.log(pizza);
 
-    $("#your-order").append("<li> Thanks " + pizza.name + ", your order will cost $" + pizza.setPizzaPrice() + ".00. </li>");
+    $("#your-order").append("Thanks " + pizza.name + ", your order will be ready in about 20 minutes and will cost $" + pizza.setPizzaPrice() + ".00.");
+
+
   });
 });
+
+$(".reset").click(function() {
+  document.location.reload();
+});
+
+
+//$("#order-form").trigger('reset')

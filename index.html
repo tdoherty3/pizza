@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +20,8 @@
   <h3>How to:</h3>
   <p>Choose your options, order and see your cost:</p>
   <ol>
-    <li>Size</li>
-    <li>Toppings</li>
+    <li>Size: Large, Medium or Personal</li>
+    <li>Toppings: Triple Cheese, Vegan Spring Veggie, Pepperoni Madness, Arugula & Wild Mushrooms</li>
     <li>Add a first name for your order</li>
   </ol>
 
@@ -31,64 +32,66 @@
 
         <select class="form-control" id="pizza-size">
           <div class="radio">
-            <option type="radio" name="large" value="12">Large</option>
+            <option type="radio" name="large" value="12">Large $12.00</option>
           </div>
           <div class="radio">
-            <option type="radio" name="medium" value="10">Medium</option>
+            <option type="radio" name="medium" value="10">Medium $10.00</option>
           </div>
           <div class="radio">
-            <option type="radio" name="personal" value="8">Personal</option>
+            <option type="radio" name="personal" value="8">Personal $8.00</option>
           </div>
         </select>
       </div>
 
 
-        <div class="col-md-6">
-          <h2>Which topping mix?</h2>
-          <select class="form-control" id="pizza-type">
-            <div class="radio">
-              <option type="radio" name="large" value="2">Triple Cheese</option>
-            </div>
-            <div class="radio">
-              <option type="radio" name="medium" value="4">Vegan Spring Veggie</option>
-            </div>
-            <div class="radio">
-              <option type="radio" name="personal" value="6">Pepperoni Madness</option>
-            </div>
-            <div class="radio">
-              <option type="radio" name="personal" value="8">Arugula & Wild Mushrooms</option>
-            </div>
-          </select>
-        </div>
-
-        <!-- <div class="col-md-6">
-        <div class="form-group">
-          <h2>Toppings:</h2>
-          <input type="checkbox" name="topping" value="1"> Cheese<br>
-          <input type="checkbox" name="topping" value="2"> Pepperoni<br>
-          <input type="checkbox" name="topping" value="3"> Olives<br>
-          <input type="checkbox" name="topping" value="4"> Mushrooms<br>
-        </div>
-      </div> -->
-    </div>
-
-    <div class="row">
-      <div class="col-md-4">
-        <div class="form-group">
-          <label for="firstname"><h2>A first name for the order?</h2></label>
-          <input id="firstname" class="form-control" type="text">
-        </div>
+      <div class="col-md-6">
+        <h2>Which topping mix?</h2>
+        <select class="form-control" id="pizza-type">
+          <div class="radio">
+            <option type="radio" name="large" value="2">Triple Cheese $2.00</option>
+          </div>
+          <div class="radio">
+            <option type="radio" name="medium" value="4">Vegan Spring Veggie $4.00</option>
+          </div>
+          <div class="radio">
+            <option type="radio" name="personal" value="6">Pepperoni Madness $6.00</option>
+          </div>
+          <div class="radio">
+            <option type="radio" name="personal" value="8">Arugula & Wild Mushrooms $8.00</option>
+          </div>
+        </select>
       </div>
-    </div>
+</div>
 
-    <button id="submit" type="button">Order my pie!</button>
-  </form>
+      <!-- <div class="col-md-6">
+      <div class="form-group">
+      <h2>Toppings:</h2>
+      <input type="checkbox" name="topping" value="1"> Cheese<br>
+      <input type="checkbox" name="topping" value="2"> Pepperoni<br>
+      <input type="checkbox" name="topping" value="3"> Olives<br>
+      <input type="checkbox" name="topping" value="4"> Mushrooms<br>
+    </div>
+  </div> -->
+
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="firstname"><h2>A first name for the order?</h2></label>
+      <input id="firstname" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<button id="submit" type="button">Order my pie!</button>
+</form>
 
 <div>
   <ul id="your-order">
   </ul>
-
 </div>
+
+<button class="reset">Reset</button>
 
 </div>
 

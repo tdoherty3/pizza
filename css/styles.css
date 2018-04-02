@@ -8,5 +8,21 @@ text-align: center;
 body {
   background-color: white;
   color: red;
-  margin-left: 
+  margin: 10px;
+}
+
+#submit {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#your-order {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#reset {
+  margin-top: 0px;
 }
