@@ -1,3 +1,4 @@
+
 //Business Logic
 function Pizza (size, topping, name) {
   console.log(size);
@@ -22,7 +23,6 @@ $(document).ready(function() {
     var selectedSize = parseInt($("select#pizza-size").val());
     var selectedTopping = parseInt($("select#pizza-type").val());
     var name = $("#firstname").val();
-    //var selectedToppings = $("input:checkbox[name=topping]:checked").val();
     console.log(selectedTopping);
     console.log(selectedSize);
     console.log(name);
@@ -40,5 +40,6 @@ $(".reset").click(function() {
   document.location.reload();
 });
 
+//var selectedToppings = $("input:checkbox[name=topping]:checked").val();
 
 //$("#order-form").trigger('reset')
